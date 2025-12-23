@@ -12,4 +12,4 @@ for i in range(0,4):
     if x < menor:
         menor = x
 
-print(f'O maior peso foi: {maior:.2f}, o menor peso foi: {menor:.2f}')
+print(f'O maior peso foi: {maior:.2f}Kg, o menor peso foi: {menor:.2f}Kg')

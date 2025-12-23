@@ -1,8 +1,9 @@
 soma = 0
+cont = 0
+for c in range(3,501,6):
+    
+    soma += c
+    cont += 1
 
-for c in range(1,501):
-    if c % 3 == 0:
-        soma += c
-        #print(c)
+print(f'A soma dos {cont} numeros multiplos de 3 e impares e: {soma}')
 
-print(f'A soma e: {soma}')
