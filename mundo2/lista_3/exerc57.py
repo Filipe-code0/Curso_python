@@ -21,7 +21,7 @@ while Z != 5:
         print()
 
     elif Z==2:
-        print(f'RESULTADO: {X} * {Y} = {X+Y}')
+        print(f'RESULTADO: {X} * {Y} = {X*Y}')
         print()
 
     elif Z==3:

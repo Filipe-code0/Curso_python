@@ -12,9 +12,6 @@ while i < num:
         ant = 1
         atu = 1
     
-    if i == 0:
-        print('0 ->', end = '')
-    
     else:
         res = ant + atu
         ant = atu
