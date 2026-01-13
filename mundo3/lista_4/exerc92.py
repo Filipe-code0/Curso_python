@@ -19,7 +19,16 @@ while True:
     if op == 'N':
         break
 media = tot_idade/cont
-print(f'cont: {cont}, total: {tot_idade}, mulheres: {mulheres}, media: {media}')
+print(f'A) Ao todo temos {cont} pessoas cadastradas.')
+print(f'B) A média de idade é de {media:.2f}')
+print(f'C) As mulheres cadastradas foram ',end='')
+for i in mulheres:
+    print(f'{i} ',end='')
+print()
+print(f'D) Lista das pessoas que estão acima de média:')
 for i in grupo:
-    if i['idade'] > media:
-        print(i)
+    if i['idade'] >= media:
+        for k,v in i.items():
+            print(f'    {k} = {v}; ', end = '')
+        print()
+print('<< ENCERRADO >>')

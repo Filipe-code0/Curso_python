@@ -19,9 +19,21 @@ while True:
     if op == 'N':
         break
 print('-=' * 20)
-print(f'{'cod:<5'}{'nome:<5'}{'gols:>5'}{'total:>5'}')
-print('-' * 20)
+print(f'{'cod':<5}{'nome':<5}{'gols':>5}{'total':>10}')
+print('-' * 40)
 for c,i in enumerate(elenco):
-    print(f'{c:<5}{elenco[i]["nome"]:<5}{}{}')
-print(f'Foi um total de {jogador['total']} gols.\n')
+    print(f'{c}     {i["nome"]}     {i["gols"]}     {i["total"]}')
+print('-' * 40)
+while True:
+    num = int(input('Mostrar dados de qual jogador? '))
+    if num == 999:
+        break
+    elif num > len(elenco)-1:
+        print('JOGADOR NÃO ENCONTRADO')
+        print('-' * 40)
+    else:
+        print(f'Levantamento do jogador {elenco[num]["nome"]}')
+        for c,i in enumerate(elenco[num]["gols"]):
+            print(f'No jogo {c} fez {i} gols.')
+        print('-' * 40)
 
