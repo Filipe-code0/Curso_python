@@ -1,16 +1,19 @@
-def metade(preco):
-    return preco*0.50
+def metade(preco=0):
+    preco = preco*0.50
+    return preco
 
-def dobro(preco):
-    return preco*2
+def dobro(preco=0):
+    preco = preco*2
+    return preco
 
-def aumentar(preco, taxa):
-    return preco + (preco*(taxa/100))
+def aumentar(preco=0, taxa=0):
+    preco = preco + (preco*(taxa/100))
+    return preco
 
-def diminuir(preco, taxa):
-    return preco - (preco*(taxa/100))
+def diminuir(preco=0, taxa=0):
+    preco = preco - (preco*(taxa/100))
+    return preco
 
-def moeda(valor):
-    valor = float(valor)
-    return valor
-
+def moeda(preco=0, moeda='R$'):
+    preco = f'{moeda}{preco:.2f}'.replace('.',',')
+    return preco

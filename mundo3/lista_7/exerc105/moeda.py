@@ -10,7 +10,3 @@ def aumentar(preco, taxa):
 def diminuir(preco, taxa):
     return preco - (preco*(taxa/100))
 
-def moeda(valor):
-    linha = valor[:.2f]
-    return linha
-
